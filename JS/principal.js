@@ -8,5 +8,5 @@ var tdPeso = paciente.querySelector(".info-peso");
 var peso = tdPeso.textContent;
 
 console.log(paciente);
-console.log(tdPeso); 
+console.log(Peso); 
 
