@@ -29,16 +29,16 @@ var pesoehValido = true;
  var alturaehValido = true;
 
 
-if (peso < 0 || peso > 1000) {
+if (peso <= 0 || peso >= 1000) {
   console.log("peso inválido");
-  var pesoehValido = false;
+  var pesoEhValido = false;
   tdlmc.textContent = "peso invalido";
 }
 
 
-if(altura < 0||altura > 3.00){
+if(altura <= 0||altura >= 3.00){
    console.log("Altura inválida");
-    var alturaehValido = false;
+    var alturaEhValido = false;
     tdlmc.textContent = "altura invalida!";
 }
 
