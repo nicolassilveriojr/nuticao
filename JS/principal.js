@@ -2,7 +2,7 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent = ("Nego nutritations");
+titulo.textContent = ("Pedro nutritations");
 
 
 
@@ -20,11 +20,28 @@ var tdAltura = document.querySelector("#primeiro-paciente");
 var altura = document.querySelector(".info-altura");
 var altura = tdAltura.textContent;
 console.log(altura);
+
+
+
+
+//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+var pesoehValido = true;
+ var alturaehValido = true;
+
+
 if (peso < 0 || peso > 1000) {
-    console.log("peso inválido");
+  console.log("peso inválido");
+  var pesoehValido = false;
 }
 
 
-if (altura, 0 || altur > 3.00) {
-    console.log("Altura inválida");
+if(altura < 0||altura > 3.00){
+   console.log("Altura inválida");
+    var alturaehValido = false;
 }
+
+
+ if(alturaEhValida && pessoEhValido){
+   var imc = peso / (altura * altura) ;
+   tdImc.textContent = imc;
+ }
