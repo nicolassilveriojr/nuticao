@@ -1,7 +1,7 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent=("White nutricao");
+titulo.textContent=("nickin nutricao");
 
 var paciente = document.querySelector("#primeiro-paciente");
 var tdNome = documentquerySelector(".info-nome");
