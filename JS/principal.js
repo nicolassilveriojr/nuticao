@@ -32,12 +32,14 @@ var pesoehValido = true;
 if (peso < 0 || peso > 1000) {
   console.log("peso inválido");
   var pesoehValido = false;
+  tdlmc.textContent = "peso invalido";
 }
 
 
 if(altura < 0||altura > 3.00){
    console.log("Altura inválida");
     var alturaehValido = false;
+    tdlmc.textContent = "altura invalida!";
 }
 
 
