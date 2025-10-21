@@ -1,12 +1,14 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent=("nickin nutricao");
+titulo.textContent = ("nickin nutricao");
 
-var paciente = document.querySelector("#primeiro-paciente");
-var tdNome = document.querySelector(".info-nome");
-var nome = tdNome.textContent;
-console.log(nome);
+var pacientes = document.querySelectorAll(".paciente");
+
+for (var i = 0; i < pacientes.length; i++) {
+    console.log(paciente[i])
+};
+
 
 var tdPeso = document.querySelector(".info-peso")
 var peso = tdPeso.textContent;
@@ -35,7 +37,7 @@ if (altura > 3.00 || altura < 0) {
     tdImc.textContent = "Altura inválida!";
 }
 
-if (alturaEhValida && pesoEhValido){
+if (alturaEhValida && pesoEhValido) {
     var imc = peso / (altura * altura);
     tdImc.textContent = imc;
 }
