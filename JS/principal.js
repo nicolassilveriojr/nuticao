@@ -3,29 +3,25 @@ console.log(titulo);
 console.log(titulo.textContent);
 titulo.textContent = ("nickin nutricao");
 
-var pacientes = document.querySelectorAll(".paciente");
+var pacientes = paciente.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++) {
-    console.log(paciente[i])
+    
+    var paciente = pacientes[i];
 };
 
-
-var tdPeso = document.querySelector(".info-peso")
+var tdPeso = paciente.querySelector(".info-peso")
 var peso = tdPeso.textContent;
-console.log(peso);
 
-var tdAltura = document.querySelector(".info-altura");
+var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
-console.log(altura);
 
-var tdImc = document.querySelector(".info-imc");
-console.log(imc);
-
+var tdImc = paciente.querySelector(".info-imc");
 
 var pesoEhValido = true;
 var alturaEhValida = true;
 
-if (peso < 0 || peso > 1000) {
+if (peso <= 0 || peso > 1000) {
     console.log("Peso inválido");
     pesoEhValido = false;
     tdImc.textContent = "Peso inválido!";
