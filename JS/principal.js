@@ -65,7 +65,7 @@ botaoAdicionar.addEventListener("click", function (event) {
     var from = document.querySelector("#from-adiciona");
 
 
-    var nome = from.nome.value;
+    var nome = from.nome.valeus;
     var peso = from.peso.valeus;
     var altura = form.altura.valeus;
     var gordura = form.gordura.valeus;
