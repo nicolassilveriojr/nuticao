@@ -52,7 +52,7 @@ titulo.addEventListener("click", function () {
 });
 
 
-titulo.addEventListener("click", mostramensagem);
+titulo.addEventListener("click", mostraMensagem);
 function mostramensgem() {
     alert("Olá eu fui clicado.")
 }
