@@ -77,6 +77,7 @@ botaoAdicionar.addEventListener("click", function (event) {
     var alturaTd = document.createElement("td")
     var gorduraTd = document.createElement("td")
     var imcTd = document.createElement("td")
-});
+}
+);
 
 
