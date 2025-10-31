@@ -62,7 +62,7 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function (event) {
     event.preventDefault();
     alert("OI eu sou o botão e fui clicado");
-    var from = document.querySekector("#from-adiciona");
+    var from = document.querySelector("#from-adiciona");
 
 
     var nome = from.nome.value;
