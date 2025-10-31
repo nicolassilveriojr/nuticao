@@ -70,7 +70,13 @@ botaoAdicionar.addEventListener("click", function (event) {
     var altura = form.altura.valeus;
     var gordura = form.gordura.valeus;
 
+    var pacienteTr = document.createElement("tr");
 
+    var nomeTd = document.createElement("td")
+    var pesoTd = document.createElement("td")
+    var alturaTd = document.createElement("td")
+    var gorduraTd = document.createElement("td")
+    var imcTd = document.createElement("td")
 });
 
 
