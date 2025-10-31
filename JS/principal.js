@@ -1,39 +1,76 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent = ("Nickin nutrição");
+titulo.textContent = ("Aparecida Nutricionista");
 
 var pacientes = document.querySelectorAll(".paciente");
+
 for (var i = 0; i < pacientes.length; i++) {
 
-var paciente = pacientes[i];
+    var paciente = pacientes[i];
 
-var tdPeso = paciente.querySelector(".info-peso");
-var peso = tdPeso.textContent;
+    var tdPeso = paciente.querySelector(".info-peso");
+    var peso = tdPeso.textContent;
 
-var tdAltura = paciente.querySelector(".info-altura");
-var altura = tdAltura.textContent;
+    var tdAltura = paciente.querySelector(".info-altura");
+    var altura = tdAltura.textContent;
 
-var tdImc = paciente.querySelector(".info-imc");
+    var tdImc = paciente.querySelector(".info-imc");
 
-var pesoEhValido = true;
-var alturaEhValida = true;
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
-if (peso <= 0 || peso >= 1000) {
-console.log("Peso invalido");
-pesoEhValido = false;
-tdImc.textContent = "Peso ivalido";
+    if (peso <= 0 || peso >= 1000) {
+        console.log("Peso inválido!");
+        pesoEhValido = false;
+        tdImc.textContent = "Peso inválido";
+        // paciente.style.backgroundColor = "red";
+        paciente.classList.add("paciente-invalido");
+    }
+
+    if (altura <= 0 || altura >= 3.00) {
+        console.log("Altura inválida!");
+        alturaEhValida = false;
+        tdImc.textContent = "Altura inválida";
+        paciente.classList.add("paciente-invalido");
+    }
+
+    if (alturaEhValida && pesoEhValido) {
+        var imc = peso / (altura * altura);
+        tdImc.textContent = imc.toFixed(2);
+    }
 }
 
-if (altura <= 0 || altura >= 3.00) {
-console.log("Altura invalida!");
-alturaEhValida = false;
-tdImc.textContent = "Altura invalida";
+titulo.addEventListener("click", mostraMensagem);
+function mostraMensagem() {
+    alert("Olá eu fui clicado.")
 }
 
-if (alturaEhValida && pesoEhValido) {
-var imc = peso / (altura * altura);
-tdImc.textContent = imc;
+
+titulo.addEventListener("click", function () {
+    alert("Ola eu fui clicado numa funcao anonima");
+});
+
+
+titulo.addEventListener("click", mostramensagem);
+function mostramensgem() {
+    alert("Olá eu fui clicado.")
 }
-}
+
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("OI eu sou o botão e fui clicado");
+    var from = document.querySekector("#from-adiciona");
+
+
+    var nome = from.nome.value;
+    var peso = from.peso.valeus;
+    var altura = form.altura.valeus;
+    var gordura = form.gordura.valeus;
+
+
+});
+
 
