@@ -65,10 +65,10 @@ botaoAdicionar.addEventListener("click", function (event) {
     var from = document.querySelector("#from-adiciona");
 
 
-    var nome = form.nome.valeus;
-    var peso = form.peso.valeus;
-    var altura = form.altura.valeus;
-    var gordura = form.gordura.valeus;
+    var nome = form.nome.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
 
     var pacienteTr = document.createElement("tr");
 
