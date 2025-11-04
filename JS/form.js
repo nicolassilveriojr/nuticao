@@ -18,7 +18,7 @@ var pesoTd = document.createElement("td");
 var alturaTd = document.createElement("td");
 var gorduraTd = document.createElement("td");
 var imcTd = document.createElement("td");
-1
+
 nomeTd.textContent = nome;
 pesoTd.textContent = peso;
 alturaTd.textContent = altura;
