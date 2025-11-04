@@ -52,5 +52,3 @@ titulo.addEventListener("click", mostraMensagem);
 function mostraMensagem() {
     alert("Olá eu fui clicado.")
 }
-
-}
